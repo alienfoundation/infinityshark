@@ -1,0 +1,140 @@
+body,
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+div.brand-name h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+div.left {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    background: #1313ab;
+    padding: 20px;
+    left: 0;
+    padding-top: 9%;
+    box-shadow: 4px 0 5px 0 rgba(0,0,0,0.14), 10px 0 30px 0 rgba(0,0,0,0.12), 2px 0 4px -1px rgba(0,0,0,0.2);
+    animation-name: left-anim;
+    animation-duration: 1s;
+}
+
+@keyframes left-anim {
+    from {left: -100%;}
+    to {left: 0;}
+}
+
+div.left div.left-content {
+    position: relative;
+    animation-name: left-content-anim;
+    animation-duration: 1.5s;
+}
+
+@keyframes left-content-anim {
+    from {top: -100%; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+div.left h1.brand-name {
+    text-transform: uppercase;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+div.left h1.brand-name span {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    margin-right: 3px;
+    animation-name: brand-name-span;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes brand-name-span {
+    0% {color: orangered}
+    30% {color: cyan}
+    40% {color: #e1e1e1}
+    50% {color: teal}
+    70% {color: orange}
+    100% {color: orangered}
+}
+
+div.left hr {
+    border: none;
+    border-top: 2px dashed orange;
+    width: 30%;
+    margin-top: 2px;
+    margin-bottom: 15%;
+}
+
+div.left p.about {
+    color: #c1c1c1;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+div.left p.signature {
+    position: relative;
+    margin-top: 15%;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 10%;
+    animation-name: signature-anim;
+    animation-duration: 1.5s;
+}
+
+@keyframes signature-anim {
+    from {bottom: -100%;}
+    to {bottom: 0;}
+}
+
+div.left p.signature span {
+    color: #b1b1b1;
+}
+
+div.right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    padding-top: 10%;
+    animation-name: right-anim;
+    animation-duration: 1s;
+}
+
+@keyframes right-anim {
+    from {right: -100%;}
+    to {right: 0;}
+}
+
+div.right div.coming-soon-container div.coming-soon-img {
+    height: 350px;
+    background: url("../images/comingsoon.png");
+    background-size: cover;
+    background-position: center;
+}
+
+div.right div.coming-soon-container h2 {
+    text-align: center;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 10%;
+    color: #777;
+}
