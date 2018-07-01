@@ -6,195 +6,656 @@ body * {
     font-family: "Roboto", sans-serif;
 }
 
-div.brand-name h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 70px;
+body {
+    background: #f6f6f6;
 }
 
-div.left {
+nav {
+    /* display: none; */
     position: fixed;
-    width: 40%;
-    height: 100%;
-    background: #1313ab;
-    padding: 20px;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    /* background: #fff; */
+    /* border-bottom: 1px solid white; */
+}
+
+div.nav-cover {
+    position: fixed;
+    z-index: 3;
     left: 0;
-    padding-top: 9%;
-    box-shadow: 4px 0 5px 0 rgba(0,0,0,0.14), 10px 0 30px 0 rgba(0,0,0,0.12), 2px 0 4px -1px rgba(0,0,0,0.2);
-    animation-name: left-anim;
-    animation-duration: 1s;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    display: none;
 }
 
-@keyframes left-anim {
-    from {left: -100%;}
-    to {left: 0;}
+nav div.brand-name h3 {
+    color: #fff;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 25px;
+    /* background: red; */
+    display: inline-block;
+    padding: 25px;
 }
 
-div.left div.left-content {
+nav div.nav-right>ul {
+    padding: 0;
+    padding-right: 40px;
+    margin-top: -78px;
+}
+
+nav div.nav-right {
+    float: right;
+}
+
+nav div.nav-right>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    /* background: yellow; */
+    text-transform: uppercase;
+    /* font-family: "Robot" */
+}
+
+
+nav div.nav-right>ul>li .nav-icon {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+nav div.nav-right ul li ul.nav-expand {
+    padding: 0;
+    background: #232f3e;
+    min-width: 300px;
+    margin-left: -100px;
+    padding: 10px 0;
+    position: absolute;
+    margin-top: 30px;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 1s;
+    border-left: 25px solid #59a8ec;
+    box-shadow: 2px 0 10px -2px rgba(0, 0, 0, 0.5) inset;
+}
+
+nav div.nav-right ul li ul.nav-expand a {
+    text-decoration: none;
+}
+
+nav div.nav-right ul li ul.nav-expand a li {
+    list-style-type: none;
+    padding: 20px 40px;
+    color: #fafafa;
+    font-size: 14px;
+    transition: all 0.7s;
+}
+
+nav div.nav-right ul li ul.nav-expand li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}    
+
+div.header {
+    z-index: 2;
+    width: 100%;
+}
+
+div.header div.header-background {
+    /* background: #fff; */
+    background: url("../images/cover1.jpeg");
+    background-size: cover;
+    background-position: left;
+}
+
+div.header div.header-background-shadow {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+div.header div.header-background-gradient {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+div.header div.header-background-filter {
+    background: url("../images/background-filter.png");
+    height: 750px;
+}
+
+div.menu-button {
+    position: absolute;
+    right: 25px;
+    top: 35px;
+}
+
+div.menu-button .menu-icon {
+    color: rgba(255,255,255,0.9);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+div.header div.brand-logo {
+    padding: 90px 0;
+}
+
+div.header div.brand-logo img {
+    height: 110px;
+    display: block;
+    margin: auto;
+}
+
+div.header div.brand-name h4 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 35px;
+    font-family: 'Great Vibes', cursive;
+    color: #f1f1f1;
+    font-weight: 400;
+}
+
+div.header div.vertical p {
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -110px;
+    bottom: 180px;
+    font-weight: 400;
+    color: #60b0f4;
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+div.header div.vertical p span {
+    font-weight: 500;
+    color: #fafafa;
+    font-family: 'Exo 2', sans-serif;
+}
+
+div.header-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+div.header-text h1 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #fafafa;
+    letter-spacing: 3px;
+    overflow: hidden;
+    animation-name: heading-text-anim;
+    animation-duration: 4s;
+}
+
+@keyframes heading-text-anim {
+    from {opacity: 0; letter-spacing: 10px;}
+    to {opacity: 1; letter-spacing: 3px;}
+}
+
+div.header-text h1 span {
+    font-family: "Oswald", sans-serif;
+    color: orange;
+}
+
+div.header-text h1:last-child span {
+    color: #00c0ff;
+}
+
+div.header-image-container {
+    position: absolute;
+    top: 255px;
+    right: 5%;
+    border-radius: 10px;
+    animation-name: header-image-anim;
+    animation-duration: 3s;
+}
+
+div.header-image-container div.header-image {
+    height: 400px;
+    width: 550px;
+    background: url("../images/mobileui1.png");
+    background-size: cover;
+    background-position: -38px center;
+    border-radius: 10px;
+}
+
+@keyframes header-image-anim {
+    from {right: -40%;}
+    to {right: 5%;}
+}
+
+div.services {
+    /* display: none; */
+    height: 750px;
+    background: linear-gradient(to top right, #f36868, #6666e8);
+    padding-top: 100px;
+    /* opacity: 0; */
+}
+
+/* div.services-animation {
+    animation-name: services-anim;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.17, 0.42, 0.74, 1.04);
+}
+
+@keyframes services-anim {
+    from {background-position-y: -500px;}
+    to {background-position: center;}
+} */
+
+div.services div.row-one {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 5%;
+}
+
+div.services div.row-one div.services-card,
+div.services div.row-two div.services-card {
     position: relative;
-    animation-name: left-content-anim;
-    animation-duration: 1.5s;
+    display: inline-block;
+    width: 60%;
+    margin-right: 1%;
+    /* border: 1px solid #e1e1e1; */
+    box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.2);
+    /* opacity: 0; */
 }
 
-@keyframes left-content-anim {
-    from {top: -100%; opacity: 0;}
+div.services div.row-one div.services-card div.services-card-content {
+    text-align: left;
+}
+
+div.services div.services-card-animation:first-child {
+    animation-name: services-card-anim1;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+div.services div.services-card-animation:nth-child(2) {
+    animation-name: services-card-anim2;
+    animation-duration: 1.4s;
+    animation-delay: 1.1s;
+}
+
+div.services div.services-card-animation:last-child {
+    animation-name: services-card-anim3;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+@keyframes services-card-anim1 {
+    from {left: -100%; opacity: 0.3;}
+    to {left: 0; opacity: 1;}
+}
+
+@keyframes services-card-anim2 {
+    from {top: -100%; opacity: 0.3;}
     to {top: 0; opacity: 1;}
 }
 
-div.left h1.brand-name {
-    text-transform: uppercase;
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: 100;
-    font-size: 35px;
-    color: #fff;
-    margin-bottom: 20px;
+@keyframes services-card-anim3 {
+    from {right: -100%; opacity: 0.3;}
+    to {right: 0; opacity: 1;}
 }
 
-
-div.left h1.brand-name span {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 55px;
-    margin-right: 3px;
+div.services div.services-card div.services-card-img {
+    height: 250px;
+    /* border-radius: 3px; */
 }
 
-div.left hr {
-    border: none;
-    border-top: 2px dashed orange;
-    width: 30%;
-    margin-top: 2px;
-    margin-bottom: 15%;
+div.services div.services-card div.services-card-img.mobile {
+    background: url("../images/mobileui.png");
+    background-size: cover;
+    background-position: center;
 }
 
-div.left p.about {
-    color: #c1c1c1;
+div.services div.services-card div.services-card-img.web {
+    background: url("../images/webui.png");
+    background-size: cover;
+    background-position: center;
+}
+
+div.services div.services-card div.services-card-img.seo {
+    background: url("../images/seo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+div.services div.services-card div.services-card-content {
+    background: #fbfbfb;
+    padding: 20px 30px;
+}
+
+div.services div.services-card div.services-card-content h4.heading {
+    color: #333;
     font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0.1px;
+    font-size: 23px;
 }
 
-div.left p.signature {
-    position: relative;
-    margin-top: 15%;
+div.services div.services-card div.services-card-content p.divider {
+    border-top: 3px solid orange;
+    width: 60px;
+    margin: 15px 0;
+}
+
+div.services div.services-card div.services-card-content p.data {
+    color: #888;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+div.services div.services-card div.services-card-buttons a {
+    display: inline-block;
+    color: #777;
+    /* background: #f95555ed; */
+    background: #f9f9f9;
+    padding: 15px 0;
+    width: 50%;
     text-align: center;
-    color: #fff;
-    font-weight: 300;
-    border-top: 1px solid #e1e1e1;
-    padding-top: 10%;
-    animation-name: signature-anim;
+    text-decoration: none;
+    box-shadow: 0 1px 3px -2px rgba(0, 0, 0, 0.3) inset;
+}
+
+div.services div.services-card div.services-card-buttons a:first-child {
+    /* border-right: 1px solid #e1e1e1; */
+}
+
+
+div.services div.services-card div.services-card-buttons a:hover {
+    text-decoration: underline;
+}
+
+div.services div.row-two {
+    width: 29%;
+    margin-right: 10%;
+    text-align: center;
+    float: right;
+    /* background: red; */
+    /* border: 1px dashed #e1e1e1; */
+}
+
+div.services div.row-two div.other-services {
+    padding: 60px 0;
+}
+
+div.services div.row-two div.other-services ul {
+    width: 100%;
+    margin: auto;
+    background: #f9f9f9;
+    border-radius: 3px;
+    box-shadow: 0 3px 15px -8px rgba(0, 0, 0, 0.3);
+}
+
+div.services div.row-two div.other-services ul li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 30px 0;
+    color: #888;
+    text-transform: uppercase;
+    border: 1px solid #e9e9e9;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+
+div.services div.row-two div.other-services ul li:nth-child(2) {
+    color: #FF9800;
+    border-bottom: 1px solid #FF9800;
+}
+
+div.services div.row-two div.other-services ul li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+div.services div.row-two div.other-services ul li:last-child {
+    border-bottom: 1px solid #e9e9e9;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+div.projects {
+    height: 750px;
+    background: url("../images/bgeffect2.jpg") #e1ebed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+}
+
+div.projects.projects-animation {
+    animation-name: projects-anim;
     animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.17, 0.42, 0.74, 1.04);
 }
 
-@keyframes signature-anim {
-    from {bottom: -100%;}
-    to {bottom: 0;}
+@keyframes projects-anim {
+    from {background-position: -600px;}
+    to {background-position: center;}
 }
 
-div.left p.signature span {
+div.projects div.projects-card {
+    display: inline-block;
+    width: 25%;
+    border-radius: 3px;
+    background: #333;
+    padding: 20px;
+    margin-left: 6%;
+    box-shadow: 0 10px 25px -15px rgba(0, 0, 0, 0.7), 2px 0 10px -4px rgba(0,0,0,0.2), -2px 0 10px -4px rgba(0,0,0,0.2);
+}
+
+div.projects div.projects-card div.projects-card-logo {
+    background: #fff;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+div.projects div.projects-card div.projects-card-logo img {
+    height: 40px;
+}
+
+div.projects div.projects-card.projects-card-animation:first-child {
+    position: relative;
+    background: #333;
+    animation-name: project-1-anim;
+    animation-duration: 1.5s;
+    animation-delay: 1.6s;
+}
+
+div.projects div.projects-card.projects-card-animation:nth-child(2) {
+    position: relative;
+    background: #333;
+    animation-name: project-1-anim;
+    animation-duration: 2s;
+    animation-delay: 1.6s;
+}
+
+div.projects div.projects-card.projects-card-animation:last-child {
+    position: relative;
+    background: #333;
+    animation-name: project-1-anim;
+    animation-duration: 2.5s;
+    animation-delay: 1.6s;
+}
+
+@keyframes project-1-anim {
+    from {top: -100%; opacity: 0.3;}
+    to {top: 0; opacity: 1;}
+}
+
+div.projects div.projects-card div.projects-card-img {
+    height: 200px;
+    margin-top: 15px;
+}
+
+div.projects div.projects-card:first-child div.projects-card-img {
+    background: url("../images/project2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+div.projects div.projects-card:nth-child(2) div.projects-card-img {
+    background: url("../images/project1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+div.projects div.projects-card:nth-child(3) div.projects-card-img {
+    background: url("../images/project3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+div.projects div.projects-card div.projects-card-content h3,
+div.projects div.projects-card div.projects-card-content h5 {
+    line-height: 22px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+
+div.projects div.projects-card div.projects-card-content h3 {
+    margin-top: 10px;
+    color: #f1f1f1;
+    letter-spacing: 0.2px;
+}
+
+div.projects div.projects-card div.projects-card-content h5 {
+    color: #999;
+}
+
+div.projects div.projects-card div.projects-card-content p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 21px;
     color: #b1b1b1;
 }
 
-div.right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    padding: 20px;
-    animation-name: right-anim;
-    animation-duration: 1s;
+div.projects div.projects-card div.projects-options {
+    margin-top: 20px;
+    border-top: 2px solid #f1f1f1;
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: right;
 }
 
-@keyframes right-anim {
-    from {right: -100%;}
-    to {right: 0;}
+div.projects div.projects-card div.projects-options a {
+    text-decoration: none;
+    color: #ff8600;
+    font-size: 15px;
+    text-transform: capitalize;
 }
 
-div.right img.coming-soon-img {
-    width: 95%;
-    position: absolute;
-    margin-top: 15%;
-    left: 2.5%;
-    animation-name: coming-soon-img-anim;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+div.blog {
+    padding: 3% 5% 5%;
 }
 
-@keyframes coming-soon-img-anim {
-    0% {top: 1.5%}
-    50% {top: -1.5%}
-    100% {top: 1.5%}
+div.blog div.blog-heading h1 {
+    font-family: "Exo 2", sans-serif;
+    margin-bottom: 30px;
 }
 
-div.right div.coming-soon-container h2 {
-    position: relative;
+div.blog a {
+    text-decoration: none;
+}
+
+div.blog div.blog-card {
+    display: inline-block;
+    width: 30%;
     text-align: center;
-    font-family: "Roboto Slab", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 4px;
+    margin-right: 4%;
+    transition: all 0.5s;
+}
+
+div.blog div.blog-card:hover {
+    box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.5);
+}
+
+div.blog div.blog-card:last-child {
+    margin-right: 0%;
+}
+
+div.blog div.blog-card h3 {
+    margin: 20px 0 10px;
+    font-family: "Exo 2", sans-serif;
+    color: #111;
+}
+
+div.blog div.blog-card p {
+    color: #222;
+}
+
+footer {
+    background: #232f3e;
+    padding: 40px;
+}
+
+footer div.footer-one {
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+}
+
+footer div.footer-one a {
+    text-decoration: none;
+}
+
+footer div.footer-one h4 {
+    padding: 0 0 10px;
+    font-family: "Exo 2", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px dashed #999;
+}
+
+footer div.footer-one ul {
+    padding: 0;
+}
+
+footer div.footer-one ul li {
+    margin-top: 10px;
+    color: #b1b1b1;
+    list-style-type: none;
+    font-size: 15px;
     font-weight: 300;
-    text-transform: uppercase;
-    margin-top: 70%;
-    color: #777;
 }
 
-@media (max-width: 1000px) {
-    div.left {
-        position: static;
-        width: 100%;
-        padding-top: 4%;
-        height: auto;
-    }
-
-    div.left hr {
-        margin-bottom: 5%;
-    }
-
-    div.left p.signature {
-        margin-top: 5%;
-        padding-top: 3%;
-    }
-
-    div.right {
-        position: static;
-        width: 100%;
-    }
-
-    div.right div.coming-soon-container img.coming-soon-img {
-        position: static;
-        display: block;
-        left: 0;
-        width: 90%;
-        left: 10%;
-        margin: auto;
-        margin-top: 7%;
-    }
-
-    div.right div.coming-soon-container h2 {
-        position: static;
-        margin-top: 10%;
-        margin-bottom: 7%;
-    }
+footer div.footer-one div.section {
+    margin-right: 100px;
+    float: left;
+    width: 230px;
 }
 
-@media (max-width: 550px) {
-    div.left {
-        width: 100%;
-        padding-top: 10%;
-    }
+footer div.footer-one div.section .footer-icon {
+    font-size: 20px;
+    width: 30px;
+    margin-left: -30px;
+}
 
-    div.left hr {
-        margin-bottom: 10%;
-    }
+footer div.footer-one div.section.contact ul li {
+    line-height: 22px;
+    padding-left: 30px;
+}
 
-    div.left p.signature {
-        margin-top: 10%;
-        padding-top: 7%;
-    }
+footer div.footer-one div.section.brand-logo {
+    text-align: center;
+}
 
-    div.right div.coming-soon-container img.coming-soon-img {
-        margin-top: 7%;
-    }
+footer div.footer-two {
+    margin-top: 30px;
+}
 
-    div.right div.coming-soon-container h2 {
-        position: static;
-        margin-bottom: 5%;
-    }
+footer div.footer-two div#googleMap {
+    opacity: 0.75;
 }

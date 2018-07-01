@@ -1,0 +1,250 @@
+body, 
+body * {
+    padding: 0;
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+}
+
+.container-fluid {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    /* background: red; */
+    padding: 25px;
+}
+
+nav ul li.brand-name {
+    font-weight: 700;
+}
+
+.header {
+    margin-top: 0;
+    background: linear-gradient(60deg,#3d7afd 0,#4c6df9 50%,#4a68ef 50%,#5b5ef4 100%);
+    height: 350px;
+}
+
+.header-social-media {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.header-social-media .infi-social-icons {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 30px;
+    position: relative;
+    top: 2px;
+}
+
+.header-social-media .infi-social-text {
+    color: #f1f1f1;
+    display: none;
+}
+
+.header-image-container {
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 105px;
+    box-shadow: 10px 10px 60px -20px rgba(0, 0, 0, 0.4);
+}
+
+.header-image-container img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.services {
+    margin-top: 40px;
+}
+
+.services .services-image-odd img {
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    width: 130%;
+}
+
+.services .services-content h1 {
+    color: #555;
+}
+
+.services .services-content .sub-heading {
+    padding-left: 20%;
+    margin-top: 80px;
+    padding-right: 10%;
+}
+
+.services .services-content .sub-heading p {
+    color: #777;
+}
+
+.services .services-content .sub-heading a {
+    display: inline-block;
+    margin-top: 45px;
+    border: 1px solid #4471f6;
+    color: #fff;
+    text-decoration: none;
+    background: #4471f6;
+    padding: 12px 30px;
+    border-radius: 2px;
+}
+
+.project-band {
+    height: 200px;
+    margin-bottom: -120px;
+    background: linear-gradient(60deg,#3d7afd 0,#4c6df9 50%,#4a68ef 50%,#fd3d3d 100%);
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+    margin-left: -50px;
+    border-radius: 3px;
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.project-content {
+    padding: 30px;
+    margin-top: -85px;
+}
+
+.project-content h1, 
+.project-content p {
+    color: #fafafa;
+}
+
+.project-count {
+    display: inline-block;
+    background: orange;
+    border-radius: 50%;
+    padding: 8px 20px 10px;
+    margin-right: 10px;
+}
+
+.blogs {
+    margin-top: 70px;
+    /* background: #f6f6f6; */
+    /* background: url("../images/blogbg.jpg"); */
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 150px;
+}
+
+.blogs .blog-heading h1 {
+    text-transform: uppercase;
+    font-size: 180px;
+    margin-top: -210px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.blogs .blogs-background {
+    background: linear-gradient(60deg,#fd3d3d 0,#4c6df9 70%,#4a68ef 50%,#5b5ef4 100%);
+    height: 250px;
+    position: relative;
+    top: 150px;
+    border-radius: 5px;
+    width: 200%;
+    margin-left: -50%;
+}
+
+.blogs .blog-card {
+    position: relative;
+    z-index: 2;
+    width: 75%;
+    margin: auto;
+    margin-top: -100px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.6);
+}
+
+.blogs .blog-card.card-one {
+    margin-left: 25%;
+}
+.blogs .blog-card.card-two {
+    margin-top: -350px;
+}
+.blogs .blog-card.card-three {
+    margin-right: 25%;
+}
+
+.blogs .blog-card .blog-card-img {
+    background: url("../images/project1.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.blog-card .blog-card-content {
+    padding: 40px;
+}
+
+.blog-card .blog-card-content h4 {
+    margin-bottom: 20px;
+}
+
+.blog-card .blog-link {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.blog-card .blog-link .blog-icon {
+    font-size: 20px;
+}
+
+footer {
+    background: #24303e;
+    padding: 50px 50px 30px;
+}
+
+footer .brand-logo img {
+    height: 100px;
+    display: block;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+footer .footer-links h5 {
+    color: #e1e1e1;
+}
+
+footer .footer-links ul a {
+    text-decoration: none;
+    color: #999;
+}
+
+footer .footer-links ul li {
+    list-style-type: none;
+}
+
+footer .footer-icon {
+    font-size: 18px;
+    width: 30px;
+}
+
+footer .contact ul li {
+    margin-bottom: 10px;
+}
