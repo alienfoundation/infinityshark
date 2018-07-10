@@ -2174,7 +2174,7 @@ ul{
 
 .parallax-container {
   margin-bottom: -90px;
-  clip-path: polygon(0 0, 100% 0, 100% 92vh, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 92vh, 0 100%); */
   background: linear-gradient(215deg , rgb(70, 25, 251) 0%, rgb(156,81,245) 70%, rgb(184,142, 231) 100%);
 }
 
