@@ -22,6 +22,9 @@
 		<link href="css/owl.theme.css" rel="stylesheet">
 		<link href="css/owl.transitions.css" rel="stylesheet">
 
+		
+		<script src="js/jquery.min.js"></script>
+
 		<link href="css/style.css" rel="stylesheet">
 
 
@@ -52,7 +55,16 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
-							<li><a href="#service">Service</a></li>
+							<li class="nav-hover"><a href="#service">Service <i class="fas fa-angle-down nav-icon"></i></a>
+								<ul class="nav-dropdown">
+									<li><a href="#">Website Development</a></li>
+									<li><a href="#">Mobile App Development</a></li>
+									<li><a href="#">Design and Markup</a></li>
+									<li><a href="#">Digital Marketing</a></li>
+									<li><a href="#">Content Development</a></li>
+									<li><a href="#">Analytics</a></li>
+								</ul>
+							</li>
 							<li><a href="#portfolio">Portfolio</a></li>
 							<li><a href="#pricing">Pricing</a></li>
 							<li><a href="#blog">Blog</a></li>
@@ -449,7 +461,6 @@
 			</div>
 		</section>
 
-
 		<section class="portfolio" id="portfolio">
 			<div class="container-fluid ">
 				<div class="row">
@@ -555,6 +566,16 @@
 			</div>
 		</section>
 
+
+		<!-- PORTFOLIO -->
+		<!-- <div class="demo">
+		<div class="demo__help">
+			Choose a photo
+		</div>
+		<div class="demo__gallery">
+		</div>  
+		</div> -->
+
 		<section class="clients">
 			<div class="container">
 				<div class="row">
@@ -563,6 +584,20 @@
 							<h3>Some Of our clients</h3>
 							<p>Avocent deditum long</p>
 						</div> -->
+						<div class="foo foo-clients">
+							<span class="letter" data-letter="O">O</span>
+							<span class="letter" data-letter="u">u</span>
+							<span class="letter" data-letter="r">r</span>
+							<span class="space"></span>
+							<span class="letter" data-letter="C">C</span>
+							<span class="letter" data-letter="l">l</span>
+							<span class="letter" data-letter="i">i</span>
+							<span class="letter" data-letter="e">e</span>
+							<span class="letter" data-letter="n">n</span>
+							<span class="letter" data-letter="t">t</span>
+							<span class="letter" data-letter="s">s</span>
+							<span class="letter" data-letter=".">.</span>
+						</div>
 						<ul class="clients-carousel">
 							<li><img src="https://s3-us-west-2.amazonaws.com/halanx-web/logo.png" class="img-responsive" alt=""></li>
 							<li><img src="https://www.hul.co.in/Images/unilever-logo_hul_tcm1255-459643.svg" class="img-responsive" alt=""></li>
@@ -1034,8 +1069,8 @@
 				</div>
 			</div>
         </section>
-        <div class="footer-building"></div>
 		<footer class="site-footer">
+			<div class="footer-building"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
@@ -1076,7 +1111,6 @@
 		</footer>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.easing.min.js"></script>
@@ -1088,6 +1122,7 @@
 		<script src="js/jquery.shuffle.js"></script>
 		<script src="js/owl.carousel.js"></script>
 		<script src="js/jquery.ajaxchimp.min.js"></script>
+
 		<script src="js/script.js"></script>
 
 		<script src="js/parallax.min.js"></script>
