@@ -2649,6 +2649,10 @@ ul{
     overflow: hidden;
   }
 
+  .funfacts {
+    background-size: 400%;
+    background-repeat: no-repeat;
+  }
 
   div.header {
     display: block;

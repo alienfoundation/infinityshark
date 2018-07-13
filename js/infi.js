@@ -4,9 +4,21 @@ var user_name = document.getElementsByClassName("user-name");
 var user_msg = document.getElementsByClassName("user-msg");
 
 
-window.onload = function() {
+window.onload = () => {
     document.getElementById('pre-loader').style.display = 'none';
+    if(window.innerWidth<767) {
+        $('#nav-service-link').attr("href", "javascript:void(0);");
+    } else {
+        $('#nav-service-link').attr("href", "#service");
+    }
   };
+
+window.onresize = () => {
+    if(window.innerWidth<767) {
+        $('#nav-service-link').attr("href", "javascript:void(0);");
+    }
+}
+
 
 
 i = 0;
