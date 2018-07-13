@@ -3,6 +3,10 @@ var user_pic = document.getElementsByClassName("user-pic");
 var user_name = document.getElementsByClassName("user-name");
 var user_msg = document.getElementsByClassName("user-msg");
 
+window.onload = function() {
+    document.getElementById('pre-loader').style.display = 'none';
+  };
+
 i = 0;
 j = 0;
 
