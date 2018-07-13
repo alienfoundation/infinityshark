@@ -1960,12 +1960,12 @@ footer .copy-right {
   }
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    background: #fff;
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.5);
   }
 
   .navbar-default .navbar-nav > li > a {
-    color: #333;
+    color: #fff;
     padding: 15px 40px;
   }
 
