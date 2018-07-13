@@ -359,7 +359,7 @@ h6 {
   display: block;
   width: 150px;
   height: 51px;
-  background-image: url(../images/is_logo.png);
+  background-image: url(../images_c/is_logo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -480,7 +480,7 @@ h6 {
   }
 }
 .home {
-  background-image: url(../images/hero-img9.jpg);
+  background-image: url(../images_c/hero-img9.jpg);
   background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -645,7 +645,7 @@ h6 {
   /* color: rgba(96, 0, 255);; */
 }
 .page-header {
-  background-image: url(../images/hero-img14.png);
+  background-image: url(../images_c/hero-img14.png);
   background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1175,7 +1175,7 @@ ul.styled-list.list-star li:before {
 }
 .call-2-acction {
   padding: 100px 0;
-  background-image: url(../images/c2a.png);
+  background-image: url(../images_c/c2a.png);
   background-attachment: fixed;
   background-color: #000;
 }
@@ -1366,7 +1366,7 @@ div.foo-clients {
 
 .testimonials {
   padding: 100px 0;
-  background-image: url("../images/8015.jpg");
+  background-image: url("../images_c/8015.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1690,7 +1690,7 @@ div.foo-clients {
 }
 .subscribe {
   padding: 120px 0;
-  background-image: url("../images/newletter_bg.jpg");
+  background-image: url("../images_c/newletter_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1828,7 +1828,7 @@ textarea.formFieldError {
 }
 
 div.footer-building {
-  background: url(../images/album-bg.png);
+  background: url(../images_c/album-bg.png);
   height: 180px;
   position: relative;
   top: -152px;
@@ -1844,7 +1844,7 @@ footer.site-footer {
   color: #9f9f9f;
   font-size: 13px;
   /* background: linear-gradient(215deg , rgb(70, 25, 251) 0%, rgb(156,81,245) 70%, rgb(184,142, 231) 100%); */
-  /* background: url("../images/footerbg.jpg"); */
+  /* background: url("../images_c/footerbg.jpg"); */
   background-size: cover;
   background-position: bottom;
 }
@@ -1881,7 +1881,7 @@ footer h1 span {
 }
 
 footer h1::after {
-    background: url("../images/contactus-bg.png") no-repeat;
+    background: url("../images_c/contactus-bg.png") no-repeat;
     bottom: -100%;
     content: "";
     height: 176px;
@@ -2035,7 +2035,7 @@ footer .copy-right {
 
 .infi-testi {
   height: 550px;
-  background: url("../images/8015.jpg");
+  background: url("../images_c/8015.jpg");
   background-position: top;
   background-size: contain;
   /* display: none; */
@@ -2208,7 +2208,7 @@ div.foo span.space {
 
 .banner {
   height: 750px;
-  background: url("../images/7925.jpg");
+  background: url("../images_c/7925.jpg");
   background-size: 100%;
   background-position: bottom;
   animation-name: banner-anim;
