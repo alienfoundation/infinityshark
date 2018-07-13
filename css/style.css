@@ -580,13 +580,17 @@ h6 {
   color: #fff;
 }
 
-.st-navbar-mini .navbar-default .navbar-nav  a:hover,
 .st-navbar-mini .navbar-default .navbar-nav  a:focus,
 .st-navbar-mini .navbar-default .navbar-nav  a:active {
   background-color: rgba(0, 0, 0, 0.5);
   background: #804cf5;
   color: #fff;
 }
+
+.st-navbar-mini .navbar-default .navbar-nav  a:hover {
+  color: #fff;
+}
+
 .navbar-brand {
   height: auto;
   padding: 27px 15px;
@@ -606,6 +610,8 @@ h6 {
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -webkit-transition: color 0.3s, background-color 0.3s, padding 0.3s;
           transition: color 0.3s, background-color 0.3s, padding 0.3s;
 }
@@ -1905,8 +1911,6 @@ footer ul li {
 }
 footer .copy-right {
   background: rgba(255, 255, 255, 0.15);
-  margin-left: -12%;
-  margin-right: -12%;
   text-align: center;
   color: #b1b1b1;
   padding: 12px;
@@ -2609,7 +2613,7 @@ ul{
     overflow: hidden;
   }
 
-  .header {
+  div.header {
     display: block;
     height: 100vh;
     background-image: 
