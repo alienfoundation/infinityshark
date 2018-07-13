@@ -14,6 +14,10 @@
 
 /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Halant";
   color: .808080;
@@ -1947,8 +1951,7 @@ footer .copy-right {
   }
 
   .navbar-toggle {
-    margin-right: 60px;
-    margin-top: 15px;
+    margin-top: 12px;
   }
 
   .navbar-default .navbar-toggle {
