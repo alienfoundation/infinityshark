@@ -2539,6 +2539,21 @@ ul{
   display: none;
 }
 
+#pre-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  z-index: 99999999;
+}
+
+#pre-loader img {
+  margin-top: 15%;
+}
+
 @media (max-width: 500px) {
   .foo .letter {
     font-size: 35px;
@@ -2633,6 +2648,7 @@ ul{
   .parallax {
     overflow: hidden;
   }
+
 
   div.header {
     display: block;
@@ -2732,19 +2748,4 @@ ul{
     margin-bottom: 20px;
   }
 
-}
-
-#pre-loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  background: #fff;
-  z-index: 99999999;
-}
-
-#pre-loader img {
-  margin-top: 50%;
 }
