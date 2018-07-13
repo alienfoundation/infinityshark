@@ -2605,6 +2605,14 @@ ul{
     width: 100px;
   }
 
+  .navbar-brand {
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
   .layer {
     display: none !important;
   }
