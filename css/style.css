@@ -576,7 +576,7 @@ h6 {
 .st-navbar-mini .navbar-default .navbar-nav > li.active a:focus,
 .st-navbar-mini .navbar-default .navbar-nav > li.active a:active {
   background-color: rgba(0, 0, 0, 0.5);
-  background: blue;
+  background: #804cf5;
   color: #fff;
 }
 
@@ -584,7 +584,7 @@ h6 {
 .st-navbar-mini .navbar-default .navbar-nav  a:focus,
 .st-navbar-mini .navbar-default .navbar-nav  a:active {
   background-color: rgba(0, 0, 0, 0.5);
-  background: blue;
+  background: #804cf5;
   color: #fff;
 }
 .navbar-brand {
@@ -1914,11 +1914,62 @@ footer .copy-right {
   margin-bottom: 0;
   font-family: "Open Sans", sans-serif;
 }
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-top: 41px;
-    padding-bottom: 41px;
+
+@font-face {
+  font-family: abovefont;
+  src: url("../fonts/abovefont.ttf");
+}
+
+@media (max-width: 768px) {
+
+  #scene {
+    height: 650px;    
   }
+
+  .dis-mob h1 {
+    font-family: "abovefont";
+    font-weight: 900;
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .dis-mob h1 span {
+    display: block;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .navbar-toggle {
+    margin-right: 60px;
+    margin-top: 15px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: #fff;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: #fff;
+    box-shadow: 0 3px 15px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #333;
+    padding: 15px 40px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    background: rgba(96, 0, 255);
+    color: #fff;
+  }
+
   .st-navbar-mini .navbar-default .navbar-nav > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -2206,12 +2257,10 @@ ul{
 
 .nav-dropdown {
   background: #232f3e;
-  border-left: 5px solid blue;
+  border-left: 5px solid #804cf5;
   position: absolute;
   width: 300px;
   padding: 10px 0;
-  /* margin-left: -100px; */
-  margin-top: -2px;
   height: 0;
   display: none;
   animation-name: nav-dropdown-anim;
@@ -2478,6 +2527,9 @@ ul{
           transform: none;
 }
 
+.header {
+  display: none;
+}
 
 @media (max-width: 500px) {
   .foo .letter {
@@ -2549,6 +2601,95 @@ ul{
     width: 100px;
   }
 
+  .layer {
+    display: none !important;
+  }
+
+  .parallax {
+    overflow: hidden;
+  }
+
+  .header {
+    display: block;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+     rgba(76, 216, 255, 0.8),
+     rgba(30, 108, 217, 0.8)),
+     url('https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg');
+    
+  background-size: cover;
+    background-position: top;
+    position: relative;
+  
+    /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+  }
+  
+  .brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  
+  .brand { font-size: 20px; }
+  
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+  
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+  
+  .heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+  }
+  
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -2566,4 +2707,3 @@ ul{
     margin-bottom: 20px;
   }
 
-}
