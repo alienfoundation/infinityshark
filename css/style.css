@@ -2609,6 +2609,15 @@ ul{
     width: 100px;
   }
 
+  footer h1 {
+    text-align: center;
+  }
+
+  footer h1:after {
+    left: 100px;
+    top: -100px;
+  }
+
   .navbar-brand {
     padding: 10px;
   }
