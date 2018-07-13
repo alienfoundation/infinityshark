@@ -2731,6 +2731,10 @@ ul{
   font-size: 14px;
   }
 
+  #pre-loader img {
+    margin-left: -5%;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -2748,4 +2752,24 @@ ul{
     margin-bottom: 20px;
   }
 
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: initial;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: block;
+  }
 }
