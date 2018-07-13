@@ -2624,13 +2624,26 @@ ul{
     width: 100px;
   }
 
-  footer h1 {
-    text-align: center;
+  .call-us h3 {
+    margin: 0;
+    margin-bottom: 10px;
   }
 
-  footer h1:after {
-    left: 100px;
-    top: -100px;
+  .funfacts {
+    padding: 80px 0 130px;
+  }
+
+  .funfacts .funfact .st-funfact-icon {
+    line-height: initial;
+  }
+
+  .funfacts .funfact .st-funfact-counter {
+    font-size: 25px;
+    line-height: initial;
+  }
+
+  .fun-icon {
+    font-size: 30px;
   }
 
   .navbar-brand {
