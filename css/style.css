@@ -1334,11 +1334,20 @@ ul.styled-list.list-star li:before {
           transform: translate3d(0, 0, 0);
 }
 .clients {
-  padding: 100px 0;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 60px 0 100px;
+  background: #f2f2f2;
 }
 div.foo-clients {
   margin-bottom: 70px !important;
 }
+
+hr.divider.testi {
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+
 .clients-carousel {
   margin: 0;
   padding: 0;
