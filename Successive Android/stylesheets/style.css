@@ -1,0 +1,779 @@
+.wrapper{
+    font-family: 'Halant', serif;
+}
+
+.sec-one{
+    height: 750px;
+    background-color: #fff;
+    background-image: url(../images/Android.png), url(../images/ip.png), url(../images/about-bg.png);
+    background-size: 26%,23%, 100%;
+    background-position-x: 80%, 80%;
+    background-position-y: 50%, 45%;
+    background-repeat: no-repeat, no-repeat;
+    background-color: black;
+}
+.sec-one img{
+    z-index: -1;
+    position: absolute;
+    height: 50%;
+    filter: brightness(200%);
+}
+
+.sec-one h2{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 40px;
+    margin-right: 430px;
+    color: #fff;
+}
+
+.sec-one p{
+    text-align: center;
+    margin-right: 380px;
+    font-size: 22px;
+    color: #fff;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+    .sec-one{
+        height: 600px;
+    }
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .sec-one{
+        height: 550px;
+    }
+    .sec-one h2{
+        margin-top: 250px;
+        font-size: 32px;
+        margin-right: 320px;
+    }
+
+    .sec-one p{
+        margin-right: 290px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .sec-one{
+        height: 650px;
+        background-size: 30%, 33%;
+        background-position: center,center, center;
+        background-position-y: 35%,30%;
+    }
+    .sec-one h2{
+        margin-top: 500px;
+        font-size: 32px;
+        margin-right: 0px;
+    }
+
+    .sec-one p{
+        margin-right: 0px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .sec-one{
+        height: 550px;
+        background-size: 33%, 30%,100%;
+        background-position: center,center, center;
+        background-position-y: 35%,30%;
+    }
+    .sec-one h2{
+        margin-top: 370px;
+        font-size: 25px;
+        margin-right: 0px;
+    }
+
+    .sec-one p{
+        margin-top: 30px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+}
+
+.sec-two{
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.sec-two h1{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(248, 137, 113);
+    font-weight: bold;
+}
+
+.sec-two p{
+    margin-top: 35px;
+    text-align: center;
+    padding-left: 380px;
+    padding-right: 380px;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+    .sec-two h1{
+        font-size: 32px;
+    }
+    .sec-two p{
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .sec-two h1{
+        font-size: 32px;
+    }
+    .sec-two p{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .sec-two h1{
+        font-size: 32px;
+    }
+    .sec-two p{
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .sec-two h1{
+        font-size: 27px;
+        margin-bottom: 0px!important;
+    }
+    .sec-two p{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+    }
+}
+
+.sec-three{
+    background-color: rgb(24, 32, 52)
+}
+
+.sec-three .text{
+    color: #fff;
+    text-align: center;
+}
+
+.sec-three .upper{
+    margin-top: 50px;
+}
+.sec-three .text h1{
+    font-size: 45px;
+}
+
+.sec-three .text h4{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.sec-three .text p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+.sec-three .btn-grp{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.sec-three .btn-grp span{
+    display: inline-block;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sec-three .btn-grp span p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.sec-three .btn-grp .btn{
+    border-radius: 47px;
+    width: 18%;
+    height: 45px;
+    font-weight: 500!important;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.sec-three .btn-grp .btn-primary{
+    background-color: rgb(197, 38, 53)!important;
+    border-color: rgb(197, 38, 53)!important;
+}
+
+.sec-three .btn-grp .btn-primary:hover , .sec-three .btn-grp .btn-primary:focus {
+    background-color: rgb(223, 38, 53)!important;
+    border-color: rgb(197, 38, 53)!important;
+}
+
+.btn-primary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(187, 38, 53, .5)!important;
+}
+
+.sec-three .btn-grp .btn-secondary{
+    background-color: #fff!important;
+    border-color: #fff!important;
+    color: rgb(103, 103, 103);
+}
+
+.sec-three .btn-grp .btn-secondary:hover , .sec-three .btn-grp .btn-secondary:focus {
+    background-color: #fff!important;
+    border-color: #fff!important;
+}
+
+.btn-secondary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(236, 236, 236, .5)!important;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+    .sec-three .text h1{
+        font-size: 40px;
+    }
+    .sec-three .text h4{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .sec-three .text p{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .sec-three .btn-grp .btn{
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .sec-three .text h1{
+        font-size: 36px;
+    }
+    .sec-three .text h4{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .sec-three .text p{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .sec-three .btn-grp .btn{
+        font-size: 14px;
+        width: 25%;
+    }
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .sec-three .text h1{
+        font-size: 36px;
+    }
+    .sec-three .text h4{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .sec-three .text p{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .sec-three .btn-grp .btn{
+        font-size: 14px;
+        width: 25%;
+    }
+    
+}
+
+@media only screen and (max-width: 576px){
+
+    .sec-three .upper{
+        margin-top: 30px;
+    }
+    .sec-three .text h1{
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+    .sec-three .text h4{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .sec-three .text p{
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .sec-three .btn-grp{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .sec-three .btn-grp .btn{
+        font-size: 16px;
+        font-weight: bold;
+        width: 85%;
+    }
+    .sec-three .btn-grp span{
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+}
+
+.sec-four{
+    padding-top: 20px;
+    clip-path: polygon(0 0, 0 0px, 0px 90%, 700% 0);
+    height: 700px;
+    overflow: visible;
+    background: linear-gradient(215deg , rgb(70, 25, 251) 0%, rgb(156,81,245) 70%, rgb(184,142, 231) 100%);
+}
+
+.sec-four .upper h1{
+    color: #FFCD1A;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.sec-four .upper p{
+    text-align: center;
+    color: #fff;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 18px;
+    letter-spacing: 1px;
+/*    font-weight: bold;*/
+}
+
+.sec-four .upper{
+    margin-bottom: 40px;
+}
+
+.sec-four .lower .item h5{
+    font-size: 17px;
+    margin-top: 50px;
+    text-align: center;
+    color: #1DD4F0;
+}
+
+.sec-four .lower .item p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.sec-four .lower{
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+    .sec-four{
+        height: 750px;
+    }
+    .sec-four .upper p{
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 15px;
+    }
+    .sec-four .lower .item h5{
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+    .sec-four .lower .item p{
+        font-size: 15px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .sec-four{
+        height: 750px;
+    }
+    .sec-four .upper p{
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 14px;
+    }
+    .sec-four .lower .item h5{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .sec-four .lower .item p{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .sec-four{
+        height: 900px;
+    }
+    .sec-four .upper p{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .sec-four .lower .item {
+        margin-bottom: 50px;
+    }
+    .sec-four .lower .item h5{
+        font-size: 14px;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+    }
+    .sec-four .lower .item p{
+        font-size: 13px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+
+    .sec-four{
+        height: 1350px;
+        clip-path: polygon(0 0, 0 0px, 0px 98%, 1500% 0);
+    }
+    .sec-four .upper p{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .sec-four .lower .item {
+        margin-bottom: 50px;
+    }
+    .sec-four .lower .item h5{
+        font-size: 16px;
+        margin-top: 10px;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+    }
+    .sec-four .lower .item p{
+        font-size: 15px;
+        text-align: center;
+    }
+    
+}
+
+.sec-five{
+    height: 30px;
+    overflow: visible;
+    background-repeat: no-repeat;
+}
+
+.sec-five img{
+    height: 140%;
+    width: 9%;
+    margin-top: -180px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .sec-five{
+        height: 35%;
+    }
+    .sec-five img{
+        width: 10%;
+        margin-top: -160px;
+    }    
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .sec-five{
+        height: 35%;
+    }
+    .sec-five img{
+        width: 13%;
+        margin-top: -190px;
+    }    
+    
+}
+@media only screen and (max-width: 576px){
+
+    .sec-five{
+        height: 30%;
+    }
+    .sec-five img{
+        width: 18%;
+        margin-top: -100px;
+    }    
+    
+}
+
+.sec-six{
+    background-image: url(../images/point-connect.png);
+    margin-top: 40px;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec-six .upper{
+    margin-bottom: 50px;
+}
+
+.sec-six .upper h1{
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.sec-six .upper p{
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sec-six .mid{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.sec-six .mid h5{
+    font-weight: bold;
+}
+.sec-six .mid p{
+    font-size: 14px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+.sec-six .mid .right{
+    text-align: right;
+}
+
+.sec-six .divider img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sec-six .lower{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sec-six .lower .content {
+    margin-bottom: 30px;
+}
+.sec-six .lower .content h4{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.sec-six .lower .content p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.sec-six .mid h5{
+    color: #1DD4F0;
+}
+.sec-six .lower h4{
+    color: #1DD4F0;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+    .sec-six {
+        margin-top: 50px;
+    }
+    .sec-six .upper{
+        margin-top: 20px;
+    } 
+    .sec-six .mid{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .sec-six .lower{
+        margin-top: 10px;
+    }
+    .sec-six .mid p{
+        font-size: 13px;
+    }
+    .sec-six .lower .content h4{
+        font-size: 20px;
+    }
+    .sec-six .lower .content p{
+        font-size: 14px;
+    }
+    
+}
+
+@media only screen  and (max-width: 576px){
+
+    .sec-six .upper h1{
+        font-size: 28px;
+    }
+    .sec-six .mid{
+        margin-top: 20px;
+    }
+    .sec-six .mid h5{
+        font-size: 15px;
+        text-align: center;
+    }
+    .sec-six .mid p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .sec-six .lower .content h4{
+        font-size: 18px;
+    }
+    .sec-six .lower .content p{
+        font-size: 14px;
+    }
+    .sec-six .lower img{
+        height: 50px;;
+    }
+    .sec-six .divider img{
+        margin-top: 0px;
+    }
+}
+
+
+.sec-seven{
+    background-image: url(../images/point-connect.png);
+    margin-top: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to top left, rgba(96, 0, 255), rgba(3, 169, 244, 0.8));
+}
+.sec-seven .upper{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sec-seven .upper h1{
+    color: black;
+    letter-spacing: 0.5px;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.sec-seven .upper p{
+    font-size: 19px;
+    line-height: 1.6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.sec-seven .lower{
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.sec-seven .lower .item img{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    min-height: 47px;
+}
+
+.sec-seven .lower .item .text{
+    background-color: #6000FF;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    color: #fff;
+}
+.sec-seven .lower .item{
+    border:1px solid #6000FF;
+    background-color: #fff;
+    border-radius: 5%;
+}
+.sec-seven .lower .text{
+    text-align: center;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px){
+
+    .sec-seven .upper h1{
+        font-size: 35px;
+    }
+    .sec-seven .upper p{
+        font-size: 16px;
+    }
+    .sec-seven .lower .item{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .sec-seven .upper h1{
+        font-size: 35px;
+    }
+    .sec-seven .upper p{
+        font-size: 16px;
+    }
+    .sec-seven .lower .item{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+
+    .sec-seven .upper h1{
+        font-size: 35px;
+    }
+    .sec-seven .upper p{
+        font-size: 14px;
+    }
+    .sec-seven .lower .item{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .sec-seven .upper h1{
+        font-size: 35px;
+    }
+    .sec-seven .upper p{
+        font-size: 14px;
+    }
+    .sec-seven .lower .item{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .sec-seven .lower .item img{
+        min-height: 30px;
+    }
+}
